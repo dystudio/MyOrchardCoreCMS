@@ -96,15 +96,16 @@ Select “Yes” button to trust the self-signed certificate.
 
 ![Getting-Started-with-Orchard-Core-015](https://user-images.githubusercontent.com/59172485/71376638-5d9f0b80-257f-11ea-9b26-1f32f5d672db.png)
 
-A logging window will appear displaying debug information.
+Select “Yes” button to trust the self-signed certificate.
 
 ![Getting-Started-with-Orchard-Core-016](https://user-images.githubusercontent.com/59172485/71376639-5d9f0b80-257f-11ea-9592-34dc809a1101.png)
 
-Your Orchard Core application will then display a Setup page. Enter the “name of your site”, “Blog” for Recipe, your “default time zone”, “Sqlite” for the database, a “user name” and password. Press the “Finish Setup” button to complete the process.
+A logging window will appear displaying debug information.
 
 ![Getting-Started-with-Orchard-Core-017](https://user-images.githubusercontent.com/59172485/71376640-5d9f0b80-257f-11ea-9196-dca6cb69e159.png)
 
-Congratulations! Your Orchard Core Web Application will now be running in the default web browser.
+Your Orchard Core application will then display a Setup page. Enter the “name of your site”, “Blog” for Recipe, your “default time zone”, “Sqlite” for the database, a “user name” and password. Press the “Finish Setup” button to complete the process.
+
 
 ![Getting-Started-with-Orchard-Core-018](https://user-images.githubusercontent.com/59172485/71376641-5d9f0b80-257f-11ea-9d24-3533943d6b26.png)
 
@@ -112,8 +113,16 @@ Navigate to the admin dashboard page by specifying “/admin” at the end of th
 
 ![Getting-Started-with-Orchard-Core-019](https://user-images.githubusercontent.com/59172485/71376642-5d9f0b80-257f-11ea-8273-0948979177ab.png)
 
+Congratulations! Your Orchard Core Web Application will now be running in the default web browser.
+
 ![Getting-Started-with-Orchard-Core-020](https://user-images.githubusercontent.com/59172485/71376643-5e37a200-257f-11ea-92d8-be8f58b84b4c.png)
+
+Navigate to the admin dashboard page by specifying “/admin” at the end of the URL. i.e. https://localhost:5001/admin. Login with your credentials.
 
 ![Getting-Started-with-Orchard-Core-021](https://user-images.githubusercontent.com/59172485/71376644-5e37a200-257f-11ea-9663-d263321b903f.png)
 
+You are now ready to configure and create content for your Orchard Core Web Application.
 
+## Conclusion
+
+With just a new few lines of code and some configuration, it is easy to create a Content Management System with ASP.NET Core and Orchard Core CMS.
