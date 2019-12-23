@@ -50,9 +50,41 @@ Nuget.config:
 </configuration>
 ```
 
-## Add the Orchard Core Preview Feed to your NuGet Package Manager Package Sources
+## Modify Startup Code and Add the Orchard Core Preview Feed to your NuGet Package Manager Package Sources
 
 ![Getting-Started-with-Orchard-Core-006](https://user-images.githubusercontent.com/59172485/71376628-5bd54800-257f-11ea-8639-69af1d65e7f8.png)
+
+```
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
+namespace MyOrchardCoreCMS.Web
+{
+    public class Startup
+    {
+        // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddOrchardCms();
+        }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseOrchardCore();
+        }
+    }
+}
+
+```
 
 Select the Include prerelease check box. Select the gear icon on the left side Package Source
 
