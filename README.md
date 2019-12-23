@@ -54,6 +54,8 @@ Nuget.config:
 
 ![Getting-Started-with-Orchard-Core-006](https://user-images.githubusercontent.com/59172485/71376628-5bd54800-257f-11ea-8639-69af1d65e7f8.png)
 
+Update code block to add Orchard Core CMS.
+
 ```
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
